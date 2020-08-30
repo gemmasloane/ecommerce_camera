@@ -134,7 +134,7 @@ header {
     }
 .logo {
     float: left;
-    margin: 30px;
+    margin: 20px 30px;
 }
 .logo span {
     font-size: 40px;
@@ -148,6 +148,11 @@ li {
     margin: 10px;
 
     list-style: none;
+}
+#instagram {
+    width: 18px;
+    height: auto;
+    margin-left: 10px;
 }
 /* Banner */
 .banner {
