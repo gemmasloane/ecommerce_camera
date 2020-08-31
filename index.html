@@ -15,37 +15,36 @@
             <span>Fotomat</span>
         </div>
         <nav>
-            <!-- Desktop -->
-            <ul class="desktop">
-                <li><a href="">Product detail</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Follow us </a><img id="instagram" src="resources/images/instagram.png" alt=""></li>
-            </ul>
-            <!-- Mobile -->
-            <ul class="mobile">
-                <li><img src="resources/images/ic-logo.svg" alt=""></li>
-                <li><img src="resources/images/ic-product-detail.svg" alt=""></li>
-                <li><img src="resources/images/ic-about-us.svg" alt=""></li>
-            </ul> 
-            <!-- Share Icon -->
-            <ul id="button">
-                <li><a href="">Join Us</a></li>
-            </ul>
+            <div class="desktop">
+                <ul id="li-container">
+                    <li><a href="">Product detail</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Follow us </a><img id="instagram" src="resources/images/instagram.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="mobile">
+                <ul id="li-container">
+                    <li><img src="resources/images/ic-logo.svg" alt=""></li>
+                    <li><img src="resources/images/ic-product-detail.svg" alt=""></li>
+                    <li><img src="resources/images/ic-about-us.svg" alt=""></li>
+                    <li id="button"><a href="">Join Us</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Banner -->
     <div class="banner">
-        <div class="text-box">
-            <div class="big-box">
+        <div class="content-box">
+            <div class="outer-box">
                 <h2><em>Instant</em></h2>
                 <h1>FORMAT CAMERA</h1>
             </div>
-            <div class="CTA">
+            <div class="middle-box">
                 <span>Email us to request a demo and be in our</span>
                 <span>list for <strong>Febuary 2017</strong> release!</span>
             </div>
-            <div class="CTA-button">
+            <div class="CTA">
                 <span>Join the waiting list</span>
             </div>
         </div>
@@ -57,14 +56,14 @@
         <!-- Features  -->
         <div class="Feature">
             <div class="flex">
-                <div class="feature-1">
+                <div class="image-container">
                     <img src="resources/images/feature-1.png" alt="Len 1">
                     <div class="caption">
                         <h3>Advanced, automatic, instant</h3>
                         <p>Shutter speed, apperture and flash output adjust automatically</p>
                     </div>
                 </div>
-                <div class="feature-2">
+                <div class="image-container">
                     <img src="resources/images/feature-2.png" alt="Len 2">
                     <div class="caption">
                         <h3>Beautifully crafted inside-out</h3>
@@ -81,10 +80,18 @@
                 <p>Feed your creativity with 20 different filter designed by our eclectic in house photographers!</p>
             </div>
             <div class="flex">
-                <img src="resources/images/filter-1.png" alt="Filter-1">
-                <img src="resources/images/filter-2.png" alt="Filter-2">
-                <img src="resources/images/filter-3.png" alt="Filter-3">
-                <img src="resources/images/filter-4.png" alt="Filter-4">
+                <div class="image-container">
+                    <img src="resources/images/filter-1.png" alt="Filter-1">
+                </div>
+                <div class="image-container">
+                    <img src="resources/images/filter-2.png" alt="Filter-2">
+                </div>
+                <div class="image-container">
+                    <img src="resources/images/filter-3.png" alt="Filter-3">
+                </div>
+                <div class="image-container optional">
+                    <img src="resources/images/filter-4.png" alt="Filter-4">
+                </div>
             </div>
         </div>
 

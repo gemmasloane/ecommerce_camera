@@ -102,12 +102,28 @@
 
 
 html {
-
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
     color: #4A4A4A;
 }
+.main {
+    text-align: center;
+}
+.image-container {
+    overflow: hidden;
+}
+.image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 895px) {
+    .media {
+        top:
+    }
+}
 
-li {font-weight: 400; font-size: 16px;}
+li {font-weight: 400; font-size: 16px; color: #4a4a4a;}
 h2 {font-size: 25px;}
 h1 {font-family: 'Rubik', sans-serif; font-size: 50px; font-weight: 400;}
 h3 {font-family: 'Roboto', sans-serif; font-size: 36px;}
@@ -117,36 +133,38 @@ p {font-family: 'Roboto', sans-serif; font-size: 16px;}
 
 h2, h1 {color: white;}
 
+a:link { text-decoration: none; color: #4a4a4a;}
+a:visited { text-decoration: none; color: #4a4a4a;}
+a:hover { text-decoration: none; color: blue; }
+a:active { text-decoration: none; color: yellow }
+
 
 /* Header */
 
 header {
     display: block;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
     margin: 0;
     width: 100%;
     height: 85px;
-    background-color: bisque;
+    background-color: white;
+    border-bottom: solid 1px #c6c1c1;
     }
 .logo {
     float: left;
     margin: 20px 30px;
 }
-.logo span {
-    font-size: 40px;
-}
-nav {
+nav ul {
+    display: flex;
     float: right;
     margin-right: 30px;
 }
-li {
-    display: inline-block;
+nav li {
     margin: 10px;
-
     list-style: none;
 }
 #instagram {
@@ -154,48 +172,50 @@ li {
     height: auto;
     margin-left: 10px;
 }
-
-/* Extra small devices (phones, 0px - 600px) 
-@media only screen and (max-width: 600px) {} */
-/* Small devices (portrait tablets and large phones, 600px - 760px) */
-/* Medium devices (landscape tablets, 768px - 990px) */
-/* Large devices (laptops/desktops, 992px -1200px) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
+.logo span {
+    font-size: 40px;
+}
 #button {
+    display: none;
     background-color: #9DC20B;
     border-radius: 4px;
 }
-#button li a {
+#button a {
     color: white;
 }
-
-/* Media Queries - Header */
-.mobile li {
+.mobile #li-container {
     display: none;
 }
+
+/* Extra small devices (phones, 0px - 600px) 
+@media only screen and (max-width: 600px) {} */
+/* Small devices (tablets, 600px - 895px) */
+/* Large devices (laptops/desktops, 895px -1200px) */
+
 @media screen and (max-width: 600px) {
-    .mobile li {
-        display: inline-block;
+    .mobile ul {
+        display: block;
+        width: 100%;
     }
-}
-.desktop li {
-    display: inline-block;
-}
-@media screen and (max-width: 600px) {
-    .desktop li {
+    .mobile ul li {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    .desktop ul {
+        display: none;
+    }
+    .logo span {
         display: none;
     }
 }
-#button li {
-    display: none;
-}
-@media screen and (max-width: 760px) {
-    #button li {
-        display: inline-block;
+
+@media screen and (max-width: 895px) {
+    .button {
+        display: block;
     }
 }
-
 
 /* Banner */
 .banner {
@@ -208,8 +228,7 @@ li {
 /* Main Content */ 
 .main {
     margin: 64px;
-}
-.flex img {
+ img {
     width: 90%;
     height: 65%;
     padding: 32px;
